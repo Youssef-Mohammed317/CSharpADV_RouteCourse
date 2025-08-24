@@ -179,6 +179,103 @@ namespace Demo
             //list.GetRange(0,3); // get range of items from index 0 to 3 items
 
             #endregion
+
+            #region LinkedList<T>
+
+            //LinkedList<int> linkedList = new LinkedList<int>();
+            //LinkedListNode<int> node = new LinkedListNode<int>(3);
+            //LinkedListNode<int> node2 = new LinkedListNode<int>(33);
+            //linkedList.AddLast(1);
+            //linkedList.AddLast(2);
+            //linkedList.AddLast(node);
+            //linkedList.AddFirst(4);
+            //linkedList.AddAfter(node, 5);
+            //linkedList.AddBefore(node, 6);
+            //linkedList.AddBefore(node, node2);
+            //foreach (int item in linkedList)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //Console.WriteLine(linkedList.Count);
+
+            //LinkedListNode<int>? findNode = linkedList.Find(3);
+            //LinkedListNode<int>? findLastNode = linkedList.FindLast(3);
+            //LinkedListNode<int>? first = linkedList.First;
+            //LinkedListNode<int>? second = linkedList.First?.Next;
+            //Console.WriteLine(linkedList.FirstOrDefault());
+            //Console.WriteLine(linkedList.First);
+            //Console.WriteLine(linkedList.Last);
+            //Console.WriteLine(node.Value);
+            //Console.WriteLine(node.ValueRef);
+            //Console.WriteLine(node.Previous);
+            //Console.WriteLine(node.Next);
+
+            #endregion
+
+            #region Stack<T>
+            //Stack<int> stack = new Stack<int>();
+            //Console.WriteLine($"Stack Capacity: {stack.Capacity}, Count: {stack.Count}"); // 0,0
+
+            //stack.Push(1);
+            //stack.Push(2);
+            //stack.Push(3);
+            //stack.Push(4);
+
+            //Console.WriteLine($"Stack Capacity: {stack.Capacity}, Count: {stack.Count}"); // 4,4
+
+            //stack.Push(5);  
+            //Console.WriteLine($"Stack Capacity: {stack.Capacity}, Count: {stack.Count}"); // 8,5
+
+            //foreach (int item in stack)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //int popItem = stack.Pop(); // removes and returns the top item
+            //Console.WriteLine($"Popped Item: {popItem}"); // 5
+
+            //Console.WriteLine($"Stack Capacity: {stack.Capacity}, Count: {stack.Count}"); // 8,4
+
+            //int peekItem = stack.Peek(); // returns the top item without removing it
+            //Console.WriteLine($"Peek Item: {peekItem}"); // 4
+            //Console.WriteLine($"Stack Capacity: {stack.Capacity}, Count: {stack.Count}"); // 8,4
+
+            //bool flag = stack.TryPop(out int top);
+
+            //bool flag2 = stack.TryPeek(out int peek);
+
+
+            #endregion
+
+            #region Queue<T>
+
+            //Queue<int> queue = new Queue<int>();
+            //Console.WriteLine($"Queue Capacity: {queue.Capacity}, Count: {queue.Count}"); // 0,0
+
+            //queue.Enqueue(1);
+            //queue.Enqueue(2);
+            //queue.Enqueue(3);
+            //queue.Enqueue(4);
+            //Console.WriteLine($"Queue Capacity: {queue.Capacity}, Count: {queue.Count}"); // 4,4
+            //queue.Enqueue(5);
+            //Console.WriteLine($"Queue Capacity: {queue.Capacity}, Count: {queue.Count}"); // 8,5
+            //foreach (int item in queue)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //int dequeueItem = queue.Dequeue(); // removes and returns the front item
+            //Console.WriteLine($"Dequeued Item: {dequeueItem}"); // 1
+            //Console.WriteLine($"Queue Capacity: {queue.Capacity}, Count: {queue.Count}"); // 8,4
+            //int peekItem = queue.Peek(); // returns the front item without removing it
+            //Console.WriteLine($"Peek Item: {peekItem}"); // 2
+            //Console.WriteLine($"Queue Capacity: {queue.Capacity}, Count: {queue.Count}"); // 8,4
+            //bool flag = queue.TryDequeue(out int front);
+            //bool flag2 = queue.TryPeek(out int peek);
+            //Console.WriteLine($"Front Item: {front}, Peek Item: {peek}"); // 2,2
+            //Console.WriteLine($"Queue Capacity: {queue.Capacity}, Count: {queue.Count}"); // 8,3
+            //Console.WriteLine(queue.ElementAtOrDefault(10)); // 0
+
+            #endregion
         }
     }
 }
